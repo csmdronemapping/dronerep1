@@ -10,12 +10,12 @@
 	<body>
 		<!-- Import maps polyfill -->
 		<!-- Remove this when import maps will be widely supported -->
-		<script async src="https://unpkg.com/es-module-shims@1.6.0/dist/es-module-shims.js"></script>
+		<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 
 		<script type="importmap">
 			{
 				"imports": {
-					"three": "https://threejs.org/build/three.module.js",
+					"three": "../build/three.module.js",
 					"three/addons/": "./jsm/"
 				}
 			}
@@ -23,7 +23,7 @@
 
 		<script type="module">
 
-			import * as THREE from 'https://threejs.org/build/three.module.js'; 
+			import * as THREE from 'three';
 
 			import { RoomEnvironment } from 'https://threejs.org/examples/jsm/environments/RoomEnvironment.js';
 			import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
