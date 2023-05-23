@@ -65,7 +65,7 @@
 					.setTranscoderPath( 'jsm/libs/basis/' )
 					.detectSupport( renderer );
 
-				const loader = new GLTFLoader().setPath( 'examples/models/gltf/Parrot.glb' );
+				const loader = new GLTFLoader().setPath( 'examples/models/gltf/' );
 				loader.setKTX2Loader( ktx2Loader );
 				loader.setMeshoptDecoder( MeshoptDecoder );
 				loader.load( 'Parrot.glb', function ( gltf ) {
