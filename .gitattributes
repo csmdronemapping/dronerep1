@@ -1,3 +1,4 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
-
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.html filter=lfs diff=lfs merge=lfs -text
