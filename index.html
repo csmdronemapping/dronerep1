@@ -68,12 +68,7 @@
 				const loader = new GLTFLoader().setPath( 'examples/models/gltf/' );;
 				loader.setKTX2Loader( ktx2Loader );
 				loader.setMeshoptDecoder( MeshoptDecoder );
-				loader.load( 'minimodelexport1(1).glb', function ( gltf ) {
-
-					// coffeemat.glb was produced from the source scene using gltfpack:
-					// gltfpack -i coffeemat/scene.gltf -o coffeemat.glb -cc -tc
-					// The resulting model uses EXT_meshopt_compression (for geometry) and KHR_texture_basisu (for texture compression using ETC1S/BasisLZ)
-
+				loader.load( 'minimodelexport1 (1).glb', function ( gltf ) {
 					gltf.scene.position.x = -20;
 					gltf.scene.position.y = -10;
 					gltf.scene.position.z = 90;
