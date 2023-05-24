@@ -68,9 +68,8 @@
 				const loader = new GLTFLoader().setPath( 'examples/models/gltf/' );;
 				loader.setKTX2Loader( ktx2Loader );
 				loader.setMeshoptDecoder( MeshoptDecoder );
-				loader.load( 'minimodelexport1 (1).glb', function ( gltf ) {
+				loader.load( 'minimodelexport2.glb', function ( gltf ) {
 					scene.add( gltf.scene );
-
 					render();
 
 				} );
