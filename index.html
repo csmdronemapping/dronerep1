@@ -69,10 +69,6 @@
 				loader.setKTX2Loader( ktx2Loader );
 				loader.setMeshoptDecoder( MeshoptDecoder );
 				loader.load( 'minimodelexport1 (1).glb', function ( gltf ) {
-					gltf.scene.position.x = -20;
-					gltf.scene.position.y = -10;
-					gltf.scene.position.z = 90;
-					gltf.scene.rotation.y = -1;
 					scene.add( gltf.scene );
 
 					render();
