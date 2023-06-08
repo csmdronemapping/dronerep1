@@ -71,6 +71,9 @@
 				loader.load( 'minimodelexport2.glb', function ( gltf ) {
 					scene.add( gltf.scene );
 					render();
+					gltf.scene.position.x = 30;
+					gltf.scene.position.y = 0;
+					gltf.scene.position.z = 30;
 
 				} );
 
