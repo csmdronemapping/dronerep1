@@ -51,7 +51,7 @@
 				container.appendChild( renderer.domElement );
 
 				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-				camera.position.set( -100, 100, 100 );
+				camera.position.set( -50, 50, 50 );
 
 				const environment = new RoomEnvironment();
 				const pmremGenerator = new THREE.PMREMGenerator( renderer );
@@ -71,16 +71,13 @@
 				loader.load( 'minimodelexport2.glb', function ( gltf ) {
 					scene.add( gltf.scene );
 					render();
-					gltf.scene.position.x = 30;
-					gltf.scene.position.y = 0;
-					gltf.scene.position.z = 30;
 
 				} );
 
 				const controls = new OrbitControls( camera, renderer.domElement );
 				controls.addEventListener( 'change', render ); // use if there is no animation loop
 				controls.minDistance = 0;
-				controls.maxDistance = 100;
+				controls.maxDistance = 30;
 				controls.target.set( 0, 0, 0 );
 				controls.update();
 
